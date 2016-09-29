@@ -18,11 +18,12 @@ public class LibraryApp {
 		
 		//Ask user if they want to see a list of books
 		System.out.println("Display book titles? (y/n): ");
-		input = input.NextLine();
+		String search = input.NextLine();
 		
 		//Ask user to enter a title or author 
 		System.out.println("Search by title or author: ");
 		input = input.NextLine();
+		Book book = new Book(search);
 		
 		//Checks status of book (in or out)
 		while(true){
@@ -47,7 +48,7 @@ public class LibraryApp {
 				System.out.println("Thanks");
 			}
 			
-		sysout
+		
 			
 		}
 		
