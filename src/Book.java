@@ -1,20 +1,21 @@
+import java.util.ArrayList;
 
 public class Book {
-	public String author;	
-	public String title;
-	public boolean status;
+	public ArrayList<String> author;	
+	public ArrayList<String> title;
+	public ArrayList<String> status;
 	int counter = 0; //counts the number of books checked out
 
 	//constructor
-		public Book(String a,String t, boolean s){
-			author = a;
-			title = t;
+		public Book(ArrayList<String> t,ArrayList<String> a, ArrayList<String> s){
+			author = t;
+			title = a;
 			status = s;
 			counter++;
 			
 		}
 		
-	public String getAuthor() {
+	public ArrayList<String> getAuthor() {
 		return author;
 	}
 

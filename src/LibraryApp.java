@@ -80,13 +80,13 @@ public class LibraryApp {
 		
 		//Ask user to enter a title or author 
 		System.out.println("Search by title or author: ");
-		input = input.next();
+		String userInput = input.next();
 		Book book = new Book(title, author, status);
 		
 		//Checks status of book (in or out)
 		while(true){
 			System.out.println("Book is checked out. Enter another selection: ");
-			input = input.next();
+			userInput = input.next();
 			
 			if(status == in){
 				System.out.println("The book is due October 17th.");
@@ -94,11 +94,11 @@ public class LibraryApp {
 			
 			//Return book 
 			System.out.println("Would you like to return the book? (y/n): ");
-			input = input.next();
+			userInput = input.next();
 			
 			if(status.equalsIgnoreCase("y")){
 				proceed = true;	
-				
+				//wop
 			}else{
 				
 				proceed= false;
