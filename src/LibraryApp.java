@@ -62,6 +62,6 @@ public class LibraryApp {
 		
 		
 
-	}
+	}// end of main method
 
-}
+}// end of LibraryApp class
