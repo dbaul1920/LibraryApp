@@ -2,6 +2,18 @@
 public class Book {
 	public String author;	
 	public String title;
+	public boolean status;
+	int counter = 0; //counts the number of books checked out
+
+	//constructor
+		public Book(String a,String t, boolean s){
+			author = a;
+			title = t;
+			status = s;
+			counter++;
+			
+		}
+		
 	public String getAuthor() {
 		return author;
 	}
@@ -26,15 +38,6 @@ public class Book {
 		this.status = status;
 	}
 
-	public boolean status;
-	int counter = 0; //counts the number of books checked out
+	
 
-//constructor
-	public Book(String a,String t, boolean s){
-		author = a;
-		title = t;
-		status = s;
-		counter++;
-		
-	}
 }
